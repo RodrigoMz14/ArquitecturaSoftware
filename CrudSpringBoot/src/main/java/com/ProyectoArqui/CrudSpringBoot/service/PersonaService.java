@@ -20,7 +20,7 @@ public class PersonaService implements InterfacePersonaService {
     private InterfacePersona data;
 
     /**
-     *  Devuelve una lista de personas
+     *  Devuelve una lista de objetos Personas
      * @return lista de personas de la base de datos
      */
     @Override
@@ -29,7 +29,7 @@ public class PersonaService implements InterfacePersonaService {
     }
 
     /**
-     * Devuelve un objeto persona segun el atributo id
+     * Devuelve un objeto Persona segun el atributo id
      * @param id id de persona
      * @return objeto persona
      */
@@ -40,7 +40,7 @@ public class PersonaService implements InterfacePersonaService {
     }
 
     /**
-     * Guardar persona en base de datos
+     * Guardar objeto Persona en base de datos
      * @param p objeto persona a guardar
      * @return retorna 1 si la operacion fue exitosa
      */
@@ -55,7 +55,7 @@ public class PersonaService implements InterfacePersonaService {
     }
 
     /**
-     *  Para eliminar una persona
+     *  Para eliminar una persona utilizando su Id
      * @param id atributo id de persona a guardar
      */
 

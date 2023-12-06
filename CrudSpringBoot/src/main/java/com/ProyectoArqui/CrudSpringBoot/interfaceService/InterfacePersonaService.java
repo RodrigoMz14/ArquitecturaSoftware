@@ -6,7 +6,7 @@ import java.util.Optional;
 import java.util.List;
 
 /**
- * Interface que define las operaciones CRUD para objeto PERSONA
+ * Interface que define las operaciones CRUD para objeto Persona
  */
 public interface InterfacePersonaService {
 

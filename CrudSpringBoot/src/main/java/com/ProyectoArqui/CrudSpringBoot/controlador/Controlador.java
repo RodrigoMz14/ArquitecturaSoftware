@@ -24,7 +24,8 @@ public class Controlador {
     private InterfacePersonaService interfacePersonaService;
 
     /**
-     * Recupera lista de las personas
+     * Obtiene una lista de objetos Persona a través de InterfacePersonaService,
+     * la agrega al modelo y redirige a la vista index
      * @param model objeto Modelo
      * @return redirige vista a Index
      */
@@ -36,7 +37,7 @@ public class Controlador {
     }
 
     /**
-     * Agrega un nuevo objeto persona al modelo
+     * Agrega un nuevo objeto persona al modelo y redirige a vista form
      * @param model objeto Modelo
      * @return redirige a vista form
      */
@@ -48,7 +49,7 @@ public class Controlador {
     }
 
     /**
-     * Guarda objeto persona a la base de datos
+     * Envia un objeto Persona  al método save y redirige a la vista listar
      * @param p objeto persona
      * @param model Modelo
      * @return redirige a la vista listar
@@ -61,7 +62,7 @@ public class Controlador {
     }
 
     /**
-     *  Modifica objeto persona y agrega al modelo
+     *  Recupera info de una Persona por su id, lo agrega a la modelo y redirige a vista form
      * @param id id persona
      * @param model Modelo
      * @return redirige a la vista form
@@ -74,7 +75,8 @@ public class Controlador {
     }
 
     /**
-     * Indica el objeto persona a eliminar
+     * Elimina a la persona a través del Id utilizando el método delete  y redirige a la vista listar
+     * actualizada
      * @param model Modelo
      * @param id id persona
      * @return redirige a listar
@@ -86,7 +88,8 @@ public class Controlador {
     }
 
     /**
-     * Indica las personas seleccionadas a eliminar
+     * Procesa una lista de Ids recibidos de la vista, las elimina y redirige a la vista listar
+     * actualizada
      * @param selectedIds ids seleccionados
      * @return redirige a listar
      */
