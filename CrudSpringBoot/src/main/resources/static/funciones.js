@@ -1,3 +1,4 @@
+
 function eliminar(id) {
 	console.log(id);
 	swal({

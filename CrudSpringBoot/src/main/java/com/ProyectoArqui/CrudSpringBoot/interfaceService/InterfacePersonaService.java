@@ -5,6 +5,9 @@ import com.ProyectoArqui.CrudSpringBoot.modelo.Persona;
 import java.util.Optional;
 import java.util.List;
 
+/**
+ * Interface que define las operaciones CRUD para entidad PERSONA
+ */
 public interface InterfacePersonaService {
 
     public List<Persona>listar();

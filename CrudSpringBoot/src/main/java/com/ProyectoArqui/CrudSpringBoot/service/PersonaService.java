@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Clase que implementa las operaciones CRUD
+ */
 @Service
 public class PersonaService implements InterfacePersonaService {
 
@@ -16,19 +19,31 @@ public class PersonaService implements InterfacePersonaService {
     @Autowired
     private InterfacePersona data;
 
-
+    /**
+     *  Devuelve una lista de personas
+     * @return lista de personas de la base de datos
+     */
     @Override
     public List<Persona> listar() {
         return (List<Persona>)data.findAll();
     }
 
+    /**
+     * Devuelve un objeto persona segun el atributo id
+     * @param id id de persona
+     * @return objeto persona
+     */
+
     @Override
     public Optional<Persona> listarId(int id) {
-
-
         return data.findById(id);
     }
 
+    /**
+     * Guardar persona en base de datos
+     * @param p objeto persona a guardar
+     * @return retorna 1 si la operacion fue exitosa
+     */
     @Override
     public int save(Persona p) {
         int respuesta=0;
@@ -38,6 +53,11 @@ public class PersonaService implements InterfacePersonaService {
         }
         return respuesta;
     }
+
+    /**
+     *  Para eliminar una persona
+     * @param id atributo id de persona a guardar
+     */
 
     @Override
     public void delete(int id) {
