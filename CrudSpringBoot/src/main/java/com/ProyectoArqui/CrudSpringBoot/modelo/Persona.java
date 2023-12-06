@@ -3,7 +3,7 @@ package com.ProyectoArqui.CrudSpringBoot.modelo;
 import jakarta.persistence.*;
 
 /**
- *  Modelo para entidad Persona
+ *  Modelo para el objeto Persona.
  */
 @Entity
 @Table(name = "persona")

@@ -83,8 +83,6 @@ public class Controlador {
     public String delete(Model model,@PathVariable int id){
         interfacePersonaService.delete(id);
         return "redirect:/listar";
-
-
     }
 
     /**

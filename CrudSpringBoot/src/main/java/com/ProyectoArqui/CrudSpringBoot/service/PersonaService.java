@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Clase que implementa las operaciones CRUD
+ * Clase que implementa las operaciones CRUD para el objeto Persona
  */
 @Service
 public class PersonaService implements InterfacePersonaService {
